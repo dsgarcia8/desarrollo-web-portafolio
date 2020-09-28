@@ -81,8 +81,10 @@ h2 {
 }
 
 .hero-image{
+  
   object-fit: cover;
   width: 100%;
+  object-position: 25% 25%;
 }
 
 
@@ -173,6 +175,7 @@ ul {
 
 figure {
   margin: 0;
+  padding: 0;
 }
 
 .header a {
@@ -237,8 +240,8 @@ figure {
   margin-left: 20px;
 }
 .event { 
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -336,7 +339,7 @@ figure {
   flex: 1;
   margin: 0 auto;
   display: inherit;
-  justify-content: inherit;
+  justify-content: center;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
@@ -390,11 +393,22 @@ figure {
   .project-description{
     font-size:1em;
   }
+  .event{
+    width: auto;
+    flex-shrink:initial;
+  }
+  .event img{
+    width:100%;
+    object-position: 25% 25%;
+  }
 }
 @media screen and (max-width: 480px){
  .project-details{
     width:auto;
     font-size:12px;
+  }
+  .event-detail{
+    margin: -40px 10px 10px 10px;
   }
 }
 @media screen and (max-width: 320px){
